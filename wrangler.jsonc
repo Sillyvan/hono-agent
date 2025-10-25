@@ -1,9 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "hono-agent",
-  "compatibility_date": "2025-08-03",
+  "compatibility_date": "2025-10-08",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "nodejs_compat_populate_process_env",
+  ],
+
   "main": "./src/index.ts",
-  "compatibility_flags": ["nodejs_compat"],
   "durable_objects": {
     "bindings": [
       {
